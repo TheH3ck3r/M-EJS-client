@@ -1,0 +1,17 @@
+.card {
+  padding: 1em;
+  margin: 0.25em;
+  width: 95%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}

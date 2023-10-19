@@ -1,0 +1,9 @@
+.border {
+  border-bottom: solid 1px var(--ep-item)
+}
+
+.copy_link {
+  display: flex;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}

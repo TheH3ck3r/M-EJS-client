@@ -1,0 +1,29 @@
+.JournalCard {
+  padding: 1em;
+  margin: 0.25em;
+  width: 95%;
+
+  &Wrapper {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &Info {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: row;
+  }
+
+  &Date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Content {
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+  }
+}

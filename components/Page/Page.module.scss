@@ -1,0 +1,39 @@
+.Page {
+  padding: 0.5em;
+  padding-bottom: 5em;
+}
+
+.BottomNavigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.UpperNavigation {
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--ep-item);
+  z-index: 4;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+
+  &PrevButton {
+    box-sizing: border-box;
+    color: var(--ep-color-primary);
+    transition: all 0.25s ease;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+
+    &:active {
+      background-color: var(--ep-item-hovered);
+    }
+  }
+}

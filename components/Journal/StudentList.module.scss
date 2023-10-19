@@ -1,0 +1,22 @@
+.island {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+  &Top {
+    width: 100%;
+  }
+}
+
+.Headline {
+  margin-bottom: 1em;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}

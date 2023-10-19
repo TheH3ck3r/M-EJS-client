@@ -1,0 +1,29 @@
+.Calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.CalendarHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ChevronButton {
+  display: flex;
+  padding: 0.25em;
+  width: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.CalendarButton {
+  background-color: var(--ep-background-color);
+  color: var(--ep-text-color);
+  border: 2px solid var(--ep-impl-button-pseudo-border);
+  border-radius: 1em;
+  padding: 0.25em 1em;
+}

@@ -1,0 +1,21 @@
+.Calendar {
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &Enter {
+    opacity: 0;
+  }
+  &EnterActive {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  &Exit {
+    opacity: 1;
+  }
+  &ExitActive {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+}

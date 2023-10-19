@@ -1,0 +1,19 @@
+.island {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 1em;
+  gap: 1em;
+  align-items: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

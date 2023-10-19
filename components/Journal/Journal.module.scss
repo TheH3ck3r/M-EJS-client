@@ -1,0 +1,39 @@
+.Journal {
+  display: grid;
+  gap: 0.5em;
+  overflow-y: scroll;
+  max-height: 485px;
+}
+
+.BottomDrawer {
+  z-index: 999;
+}
+
+.floating {
+  right: 1em;
+  position: fixed;
+  bottom: 6rem;
+  transform: translateX(-50%);
+
+  &_button {
+    width: 3rem !important;
+    height: 3rem !important;
+    box-shadow: var(--ep-color-primary) 0px 0px 15px;
+    font-size: 1.5rem !important;
+  }
+}
+
+.Edit {
+  display: flex;
+  margin: auto;
+  margin-top: 8em;
+}
+
+.NewJournal {
+  flex-direction: column;
+  height: 60vh;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

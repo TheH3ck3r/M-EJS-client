@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "nunito", "helvica", "arial", sans-serif;
+}
+
+a {
+  color: var(--ep-color-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --ep-font-family: "Nunito", sans-serif;
+  --ep-color-primary: #ff5e00 !important;
+  --ep-color-secondary: #ee6c4d;
+  --ep-color-accent: #50c878;
+  --ep-color-success: #46c93a;
+  --ep-color-danger: #ee1415;
+  --ep-border-radius: 2em;
+  --ep-popup-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+    0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --ep-box-shadow: none;
+}
+
+@mixin ligth_theme() {
+  --ep-background-color: #f6f7f8;
+  --ep-box-background-color: #fff;
+  --ep-text-color: #000;
+  --ep-item: #eceff1;
+  --ep-item-hovered: #e4ebf3;
+  --ep-avatar-background: #d8ddf2;
+  --ep-button-background: #ebefff;
+  --ep-button-background-hovered: #dfe3f3;
+  --ep-impl-button-pseudo-border: #ccc;
+  color-scheme: light;
+}
+
+@mixin dark_theme() {
+  --ep-background-color: #222;
+  --ep-box-background-color: #2f2f2f;
+  --ep-text-color: #fff;
+  --ep-item: #545454;
+  --ep-item-hovered: #4c4c4c;
+  --ep-avatar-background: #7a7a7a;
+  --ep-button-background: #464646;
+  --ep-button-background-hovered: #575757;
+  --ep-impl-button-pseudo-border: #3f3e43;
+  --ep-skeleton-color: #54545499;
+  color-scheme: dark;
+}
+
+.theme-system {
+  @media (prefers-color-scheme: light) {
+    @include ligth_theme();
+  }
+  @media (prefers-color-scheme: dark) {
+    @include dark_theme();
+  }
+}
+
+.theme-dark {
+  @include dark_theme();
+}
+
+.theme-light {
+  @include ligth_theme();
+}
+
+body {
+  color: var(--ep-text-color);
+  background-color: var(--ep-background-color);
+}
+
+.calendar {
+  margin: auto;
+  &-table {
+    border-spacing: 0.5em;
+
+    & > thead > * > * {
+      font-weight: 400;
+    }
+  }
+}

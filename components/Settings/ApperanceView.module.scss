@@ -1,0 +1,51 @@
+.light {
+  --apperance-background: #eeeff1;
+  --apperance-skeleton: #e2e3e5;
+}
+
+.dark {
+  --apperance-background: #3a3b40;
+  --apperance-skeleton: #515258;
+}
+
+.card {
+  display: grid;
+  gap: 1em;
+  font-size: 0.875em;
+  place-items: center;
+
+  img {
+    width: 80px;
+  }
+}
+
+.cardSystem {
+  background: linear-gradient(
+    90deg,
+    #eeeff1 0%,
+    #eeeff1 50%,
+    #3a3b40 50%,
+    #3a3b40 100%
+  );
+}
+
+.skeletonSystem {
+  width: 100%;
+  height: 12px;
+  border-radius: 0.5em;
+  background: linear-gradient(
+    90deg,
+    #eeeff1 0%,
+    #eeeff1 50%,
+    #3a3b40 50%,
+    #3a3b40 100%
+  );
+}
+
+.skeleton {
+  background-color: var(--apperance-skeleton) !important;
+}
+
+.checkbox {
+  border-radius: 50% !important;
+}

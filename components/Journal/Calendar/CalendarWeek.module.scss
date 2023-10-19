@@ -1,0 +1,47 @@
+.WeekDays {
+  padding-top: 0.55em;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    transition: all 0.25 ease;
+
+    &Disabled {
+      opacity: 0.5;
+      pointer-events: none;
+
+      &Header{
+        pointer-events: none;
+      }
+    }
+
+    &DateNumber {
+      width: 2.225em;
+      height: 2.225em;
+      padding: 1em;
+      border-radius: 50%;
+      background-color: var(--ep-box-background-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &Today {
+      background-color: var(--ep-color-secondary);
+      color: #fff;
+    }
+
+    &Selected {
+      background-color: var(--ep-color-primary);
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}

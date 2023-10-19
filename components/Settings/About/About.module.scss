@@ -1,0 +1,23 @@
+.about {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  padding-bottom: 1em;
+  border-bottom: 1px solid;
+}
